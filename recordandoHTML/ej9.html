@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nombre">Name:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="username">Create a user name:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Create a password:</label>
+        <input type="password" id="password" name="password" min="6" max="12"><br><br>
+
+        <label for="fecha">Birthday:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="iam">I am:</label>
+        <select id="iam" name="iam">
+            <option value="a student">a student</option>
+            <option value="a teacher">a teacher</option>
+            <option value="a bussines owner">a bussiness owner</option>
+            <option value="self-employed">self-employed</option>
+            <option value="other">other</option>
+        </select><br><br>
+
+        <label for="level">Select your English level (0-10):</label>
+        <input type="range" id="level" name="level" min="0" max="10" value="5"><br><br>
+
+        <input type="submit" value="Sign me up">
+    </form>
+</body>
+</html>

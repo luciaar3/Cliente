@@ -9,16 +9,10 @@
 <body>
     <h1>Práctica de Arrays</h1>
     <nav>
-        <button onclick="cargarEjercicio('ej1.js')">Ejercicio 1</button>
-        <button onclick="cargarEjercicio('ej2.js')">Ejercicio 2</button>
+        <a href="ej1.js">Ejercicio 1</a>
+        <a href="ej2.js">Ejercicio 2</a>
     </nav>
-    <script>
-    function cargarEjercicio(scriptName) {
-        const script = document.createElement('script'); // crea un <script> dinámicamente
-        script.src = scriptName;                         // le pone la ruta del JS
-        script.onload = () => console.log(`${scriptName} cargado y ejecutado`); // mensaje en consola
-        document.body.appendChild(script);               // lo añade al HTML y se ejecuta
-    }
-</script>
+    <script src="ej1.js"></script>
+    <script src="ej2.js"></script>
 </body>
 </html>

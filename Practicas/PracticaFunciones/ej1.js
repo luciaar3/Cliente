@@ -1,11 +1,15 @@
 let palabra;
-let palabras =[];
+let palabras =new Set();
 do{
-    let palabra = prompt("Introduce una palabra:");
+    palabra = prompt("Introduce una palabra:");
     if(palabra !== null && palabra !== ""){
-        palabras.push(palabra);
+        palabras.add(palabra);
     }else{
-        console.log ("Debes de introducir alguna palabra.");
+        console.log ("Debes de introducir una palabra.");
     }
 
 }while(palabra !== null && palabra !== "");
+
+let lista =[...palabras];
+lista.sort((a,b) => b.localeCompare(a, "es"));
+console.log(lista);

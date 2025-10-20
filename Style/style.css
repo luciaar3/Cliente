@@ -60,6 +60,12 @@ section:hover {
     box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
+section a:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: scale(1.05);
+}
+
 section p {
     font-size: 1rem;
     line-height: 1.6rem;

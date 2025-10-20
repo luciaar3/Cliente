@@ -13,11 +13,11 @@ do{
 const contPalabras = (array) => {
     const mapa = new Map();
 
-    array.forEach(palabra => {
-        if(mapa.has(palabra)){
-            mapa.set(palabra, mapa.get(palabra) +1);
+    array.forEach(p => {
+        if(mapa.has(p)){
+            mapa.set(p, mapa.get(p) +1);
         }else{
-            mapa.set(palabra, 1);
+            mapa.set(p, 1);
         }
     });
     return mapa;

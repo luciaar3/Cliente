@@ -1,14 +1,14 @@
-let palabra;
+let palabraa = "";
 let palabrasArray = [];
 do{
-    palabra = prompt("Introduce una palabra:");
-    if(palabra !== null && palabra !== ""){
-        palabrasArray.push(palabra);
+    palabraa = prompt("Introduce una palabra:");
+    if(palabraa !== null && palabraa !== ""){
+        palabrasArray.push(palabraa);
     }else{
         console.log ("Debes de introducir una palabra.");
     }
 
-}while(palabra !== null && palabra !== "");
+}while(palabraa !== null && palabraa !== "");
 
 const contPalabras = (array) => {
     const mapa = new Map();

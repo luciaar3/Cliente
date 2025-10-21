@@ -1,3 +1,4 @@
+let texto = [];
 for (let index = 1; index <= 50; index++) {
     
     let comb = [];
@@ -10,5 +11,13 @@ for (let index = 1; index <= 50; index++) {
         }
     }
 
-    console.log (comb)
+    texto .push(comb);
 }
+let salida ="";
+for (let i = 0; i < texto.length; i++) {
+    salida += `${i +1} : ${texto[i]}<br>`;
+    
+}
+
+let id = document.getElementById("resul");
+id.innerHTML = salida;

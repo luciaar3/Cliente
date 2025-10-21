@@ -22,5 +22,12 @@ const contPalabras = (array) => {
     });
     return mapa;
 }
-const resul = contPalabras(palabrasArray);
-console.log (resul);
+
+let texto = "";
+const result = contPalabras(palabrasArray);
+for(let [palabra, cantidad] of result){
+    texto += `${palabra}: ${cantidad}<br>`;
+};
+
+let id = document.getElementById("resul");
+id.innerHTML = texto;

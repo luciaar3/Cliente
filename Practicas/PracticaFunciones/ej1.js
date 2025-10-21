@@ -14,5 +14,5 @@ let lista =[...palabras];
 lista.sort((a,b) => b.localeCompare(a, "es"));
 console.log(lista);
 
-let id= document.getElementById("resul");
+let id = document.getElementById("resul");
 id.textContent = lista.join(", ");

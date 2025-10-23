@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1</title>
+</head>
+<body>
+    <div>
+        <button id="nuevoNum">Nuevo número</button>
+        <ul id="listaNum"></ul>
+    </div>
+    <script>
+    let number;
+        function newNumber() {
+            number = Math.floor(Math.random()* 10)
+
+            let li= document.createElement("li")
+            li.textContent = number;
+
+            document.getElementById("listaNum").appendChild(li);
+
+        }   
+    document.getElementById("nuevoNum").onclick = newNumber;
+    </script>
+</body>
+</html>

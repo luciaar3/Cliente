@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3</title>
+</head>
+<body>
+     <h1>Párrafos mágicos</h1>
+    
+    <p>Haz clic para ocultarme o clic derecho para eliminarme.</p>
+    <p>También puedo desaparecer con un toque... o irme del todo.</p>
+    <p>Pero el botón "Reaparecer" puede traerme de vuelta (si no me borras).</p>
+
+    <button id="reaparecer">Reaparecer</button>
+
+    <script>
+        let p = document.getElementsByTagName("p");
+        
+            for (let index = 0; index < p.length; index++) {
+                p[index].onclick = function(){
+                    this.style.display = "none";
+                }
+                p[index].oncontextmenu = function(){
+                    this.remove();
+                } 
+            }
+            document.getElementById("reaparecer").onclick = function(){
+                for (let index = 0; index < p.length; index++) {
+                    if(p[index].style.display === "none")
+                    p[index].style.display = "block";
+                }
+            }
+    </script>
+</body>
+</html>

@@ -6,7 +6,19 @@
     <title>ej2</title>
 </head>
 <body>
-    <div id="resul"></div>
+    <form>
+        <h2>Inicio Sesión</h2>
+
+        <label id="email">Correo electronico</label>
+        <input type="text" id="email" name="email">
+        <p id="emailError" class="error"></p>
+
+        <label id="password">Contraseña</label>
+        <input type="password" id="password" name="password">
+        <p id="passwordError" class="error"></p>
+
+        <button id="enviar" type="submit" disabled>Enviar</button>
+    </form>
     <script src="ej2.js"></script>
 </body>
 </html>

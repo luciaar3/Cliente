@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice</title>
+    <link rel="stylesheet" href="../../Style/style.css">
+</head>
+<body>
+    <h1>Práctica de POO</h1>
+    <section>
+        <h2>Ejercicio 1</h2>
+        <p>
+            Crea objetos que representen rectángulos. Estos deben cumplir las siguientes
+            características:
+            • Propiedades del rectángulo: Deben tener ancho (width) y alto (height) como
+            propiedades. Estas representarán las dimensiones del rectángulo.
+            • Validación en el constructor: La construcción de los rectángulos se realizará con
+            una función constructora que recibe dos números (ancho y alto). Si alguno es
+            menor o igual a cero, se asignará un valor por defecto de 1.
+            • Método cambiarDimensiones: Este método recibe dos números y permite
+            cambiar las dimensiones del rectángulo.
+            • Método calcularArea: Este método devuelve el área del rectángulo (ancho x alto).
+            • Método copia: Este método devuelve un nuevo objeto que es una copia del
+            rectángulo.
+            • Método comparar: Este método recibe otro rectángulo y devuelve:
+            o "mayor" si el área del rectángulo actual es mayor.
+            o "menor" si es menor.
+            o "igual" si las áreas son iguales.
+            Añadir código para validar que todos los requisitos funcionan correctamente y mostrar los
+            resultados por pantalla en el DOM.
+        <a href="ej1.js">Ver código</a>
+        <a href="ej1.html">Ver resultado</a>
+    </section>
+    <section>
+        <h2>Ejercicio 2</h2>
+        <p>
+            Crea un tipo de objeto que sirve para representar ordenadores. Sus propiedades serán:
+            • Marca, un texto
+            • Modelo, un texto
+            • Memoria RAM, un número que indica los GB de capacidad
+            • Capacidad de disco duro, un número que indica el GB de capacidad
+            • Pulgadas de pantalla, un número que indica Pulgadas
+            Métodos de los ordenadores:
+            • toString, sirve para obtener en forma de texto los detalles del ordenador
+            Al crear un ordenador se pueden indicar todos sus valores, pero por defecto (sin ser
+            obligado indicarlos) se toman como valores: 17 pulgadas, 512 GB de disco duro y 4 GB de
+            RAM. La marca y modelo sí son necesarias.
+            Crea otro tipo de objeto que represente a los ordenadores portátiles. Los que heredan todo
+            lo que tiene un ordenador y añaden una nueva propiedad:
+            • autonomía, que es un número que expresa horas.
+            Se construye este objeto de la misma forma que los ordenadores, pero puede añadirse la
+            autonomía, que por defecto son 4 horas. Por defecto, todos los portátiles son de 12
+            pulgadas, 4 GB de RAM y disco duro de 256 GB. Además, el toString de un portátil añade la
+            autonomía a los detalles.
+            Añadir código para validar que todos los requisitos funcionan correctamente y mostrar los
+            resultados por pantalla en el DOM.
+        </p>
+        <a href="ej2.js">Ver código</a>
+        <a href="ej2.html">Ver resultado</a>
+    </section>
+        <p>Abre la consola (F12 → pestaña “Consola”) para ver los resultados.</p>
+</body>
+</html>

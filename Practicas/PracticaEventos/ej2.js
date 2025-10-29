@@ -18,9 +18,9 @@ function actualizarBoton() {
       }
     }
 
-email.addEventListener('blur', function() {
+password.addEventListener('blur', function() {
 
-    const value = email.value.trim();
+    const value = password.value.trim();
 
     if (value.length < 8 || value.length >10) {
         passwordError.textContent = 'La contraseña debe tener entre 8 y 10 caracteres';
@@ -31,4 +31,32 @@ email.addEventListener('blur', function() {
     }
 
     actualizarBoton();
+});
+
+email.addEventListener('blur', function() {
+
+  const value = email.value.trim();
+
+  if(value.includes('@')){
+    emailValido = true;
+    emailError.textContent = '';
+  }else{
+    emailValido = false;
+    emailError.textContent = 'El email debe contener un @';
+  }
+
+  actualizarBoton();
+});
+
+email.addEventListener('focus', function(){
+  emailError.textContent = '';
+});
+
+password.addEventListener('focus', function(){
+  passwordError.textContent = '';
+});
+
+document.getElementById('formulario').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert("Formulario listo!");
 });

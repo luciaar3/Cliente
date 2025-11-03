@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2</title>
+</head>
+<body>
+    <pre id="caracter"></pre>
+
+    <script>
+        const caracter = document.getElementById('caracter');
+        let cont = 0;
+        var incr = setInterval(function(){
+            cont++;
+            caracter.textContent += '█';
+            if(cont === 10) {
+                clearInterval(incr);
+                caracter.textContent += '\nCarga completada ✅';
+            }
+        },500);
+        
+    </script>
+</body>
+</html>

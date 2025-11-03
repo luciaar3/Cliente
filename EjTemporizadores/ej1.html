@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1</title>
+</head>
+<body>
+    <p id="p"></p>
+    <script>
+        const p = document.getElementById('p');
+        const vamos = document.createElement('p');
+        vamos.textContent = 'Nos vamos';
+        p.appendChild(vamos);
+
+        setTimeout(() => window.location.href = 'https://www.google.com',5000);
+    </script>
+</body>
+</html>

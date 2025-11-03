@@ -40,5 +40,5 @@ resul1.textContent = `Ordenador = ${ordenador1}`;
 p.appendChild(resul1);
 
 const resul2 = document.createElement('p');
-resul2.textContent = `Portátil = ${portatil1}`
+resul2.textContent = `Portátil = ${portatil1}`;
 p.appendChild(resul2);

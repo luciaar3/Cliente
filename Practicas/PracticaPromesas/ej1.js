@@ -1,4 +1,4 @@
-const nombreProducto = document.getElementById('nombreProducto');
+        const nombreProducto = document.getElementById('nombreProducto');
         const direccion = document.getElementById('direccion');
         const boton = document.getElementById('comprar');
         const resul = document.getElementById('resultado');

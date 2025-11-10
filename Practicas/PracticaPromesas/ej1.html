@@ -12,21 +12,6 @@
     <button type="button" id="comprar">Realizar Compra</button>
     <p id="resultado"></p>
 
-    <script>
-        const nombreProducto = document.getElementById('nombreProducto');
-        const direccion = document.getElementById('direccion');
-        const boton = document.getElementById('comprar');
-        const resul = document.getElementById('resultado');
-
-        boton.addEventListener(('click'), () => {
-            const intervalo = setInterval(()=> {
-                function procesarPago(){
-                    if(nombreProducto){
-                        resul.textContent = `Pago procesado correctamente para ${nombreProducto.value}`;
-                    }
-            }
-            },1500);
-        })
-    </script>
+    <script src="ej1.js"></script>
 </body>
 </html>

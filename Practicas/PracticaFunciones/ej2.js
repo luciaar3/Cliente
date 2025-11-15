@@ -4,8 +4,6 @@ do{
     palabraa = prompt("Introduce una palabra:");
     if(palabraa !== null && palabraa !== ""){
         palabrasArray.push(palabraa);
-    }else{
-        console.log ("Debes de introducir una palabra.");
     }
 
 }while(palabraa !== null && palabraa !== "");

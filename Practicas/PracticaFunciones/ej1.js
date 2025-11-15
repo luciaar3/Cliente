@@ -4,8 +4,6 @@ do{
     palabra = prompt("Introduce una palabra:");
     if(palabra !== null && palabra !== ""){
         palabras.add(palabra);
-    }else{
-        console.log ("Debes de introducir una palabra.");
     }
 
 }while(palabra !== null && palabra !== "");
@@ -15,4 +13,4 @@ lista.sort((a,b) => b.localeCompare(a, "es"));
 console.log(lista);
 
 let id = document.getElementById("resul");
-id.textContent = lista.join(", ");
+id.textContent = lista.join();

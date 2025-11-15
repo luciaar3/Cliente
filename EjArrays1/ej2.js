@@ -1,4 +1,4 @@
-const paises = ['España', 'Francia', 'Alemania', 'Italia'];
+let paises = ['España', 'Francia', 'Alemania', 'Italia'];
 for (const i in paises) {
     console.log(paises[i]);
 }

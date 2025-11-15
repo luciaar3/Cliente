@@ -1,6 +1,6 @@
-const nombres= ['Viki', 'Sole', 'Jessica', 'Jesus', 'Taylor'];
-const edades = [25,18,35,56,80];
-const mayoresDeEdad = [];
+let nombres= ['Viki', 'Sole', 'Jessica', 'Jesus', 'Taylor'];
+let edades = [25,18,35,56,80];
+let mayoresDeEdad = [];
 
 for (const i in nombres) {
     if(edades[i] >= 18){

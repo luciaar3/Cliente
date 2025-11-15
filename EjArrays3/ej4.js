@@ -1,5 +1,4 @@
-const edades = new Map();
+const personas = new Map([["Juan",28],["Paco",40],["Marc",20]]);
 
-edades.set('Juan', '34');
-edades.set('Juan', '34');
-edades.set('Juan', '34');
+personas.set("javier", 56);
+console.log(personas);

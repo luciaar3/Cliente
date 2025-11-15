@@ -1,4 +1,4 @@
-const array =['rojo', 'verde', 'azul'];
+let array =['rojo', 'verde', 'azul'];
 for (const i in array) {
     console.log(array[i]);
 }

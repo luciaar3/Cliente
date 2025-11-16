@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menú</h1>
+    <h2>Elige una opción:</h2>
+    <ol>
+        <li id="saludo">Saludo</li>
+        <li id="caja">Crear caja</li>
+        <li id="num">Generar Número Aleatorio</li>
+    </ol>
+    <button type="button" id="borrar">Borrar</button>
+
+    <h2>Resultados</h2>
+    <p id="resul"></p>
+
+    <script>
+        const saludo = document.getElementById("saludo");
+        const cajas = document.getElementById("caja");
+        const num = document.getElementById("num");
+        const boton = document.getElementById("borrar");
+        const resul = document.getElementById("resul");
+
+        function saludoo(){
+            resul.textContent = "Holaaaaa";
+        };
+        saludo.addEventListener("click", () => {
+            saludoo();
+        });
+        function crearCaja(){
+            const caja = document.createElement("div");
+            caja.style.width = "30px";
+            caja.style.height = "30px";
+            caja.style.display = "flex";
+            caja.style.alignContent = "center";
+            caja.style.backgroundColor = "red";
+
+            resul.appendChild(caja);
+        };
+        cajas.addEventListener("click", () =>{
+            crearCaja();
+        });
+
+        function random(){
+            let rand = Math.floor((Math.random()*99)+1);
+            resul.textContent = rand;
+        };
+
+        num.addEventListener("click", ()=> {
+            random();
+        });
+
+        boton.addEventListener("click", ()=> {
+            location.reload();
+        })
+    </script>
+</body>
+</html>

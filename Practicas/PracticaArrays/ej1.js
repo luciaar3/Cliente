@@ -11,7 +11,7 @@ for (let index = 1; index <= 50; index++) {
         }
     }
 
-    texto .push(comb);
+    texto.push(comb);
 }
 let salida ="";
 for (let i = 0; i < texto.length; i++) {

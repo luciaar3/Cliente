@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice</title>
+    <link rel="stylesheet" href="../../Style/style.css">
+</head>
+<body>
+    <h1>Práctica de Arrays</h1>
+    <section>
+        <h2>Ejercicio 1</h2>
+        <p>
+            La página https://fakerapi.it/ permite obtener datos aleatorios de personas pensando en
+            que los desarrolladores y otros profesionales puedan utilizarlos en sus pruebas y test.<br>
+            En todo caso la idea es hacer peticiones vía GET a la URL:<br>
+            https://fakerapi.it/api/v2/persons?_quantity=1<br>
+            Se pueden pasar parámetros para indicar cuántos usuarios aleatorios deseamos, el sexo,
+            política de contraseñas, páginas, formato de respuesta, etc. En la página de
+            documentación viene un ejemplo de la estructura ]SON de las respuestas.<br>
+            Como resumen, podemos decir que la respuesta es un objeto que contiene una única
+            propiedad, la cual es un array. Cada elemento de ese array es un objeto que representa a
+            un usuario aleatorio.<br>
+            La aplicación debe mostrar imagen, nombre, apellido, email, dirección y país al que
+            pertenece el usuario. Cada vez que actualicemos la página, se pedirá otro usuario. 
+        </p>
+        <a href="ej1.js">Ver código</a>
+        <a href="ej1.html">Ver resultado</a>
+    </section>
+    <section>
+        <h2>Ejercicio 2</h2>
+        <p>
+            Realiza una aplicación web que pida al usuario un número que represente el ID de un
+            producto. Al pulsar un botón, deben realizarse las siguientes acciones:<br>
+            1. GET:<br>
+            Llamar a https://dummyjson.com/products/{id} sustituyendo {id} por el número
+            introducido.<br>
+            o Si la petición es correcta, mostrar en pantalla:<br>
+            ▪ el id<br>
+            ▪ el título del producto<br>
+            ▪ el precio<br>
+            o Si el producto no existe (por ejemplo, letras o números fuera del rango), la
+            API devolverá un error y debe mostrarse el status correspondiente (404).<br>
+            2. POST:<br>
+            Con los datos obtenidos en el GET, hacer una petición POST a
+            https://httpbin.org/post enviando en el body un JSON con:<br>
+            o id<br>
+            o title<br>
+            o price<br>
+            La respuesta de esta API devuelve dentro de la propiedad json el mismo objeto enviado.
+            Debe mostrarse en la pantalla el title devuelto por el POST.<br>
+            3. STATUS:<br>
+            Si todo ha ido bien, mostrar 200.<br>
+            Si hubo error en el GET, mostrar el código de error recibido (404, etc.).<br>
+            El ejercicio puede resolverse con promesas o con async/await.
+        </p>
+        <a href="ej2.js">Ver código</a>
+        <a href="ej2.html">Ver resultado</a>
+    </section>
+        <p>Abre la consola (F12 → pestaña “Consola”) para ver los resultados.</p>
+</body>
+</html>

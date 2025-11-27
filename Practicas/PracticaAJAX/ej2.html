@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2</title>
+</head>
+<body>
+    <input type="text" id="numero">
+    <button type="submit" id="enviar">Enviar</button>
+    <p id="id"></p>
+    <p id="titulo"></p>
+    <p id="precio"></p>
+
+    <script>
+        const num = document.getElementById('numero').value;
+        const enviar = document.getElementById('enviar');
+        const id = document.getElementById('id');
+        const titulo = document.getElementById('titulo');
+        const precio = document.getElementById('precio');
+
+        enviar.addEventListener('click', () =>{
+            fetch('https://dummyjson.com/products/{num}') //api
+                .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Error HTTP: ${response.status}`);
+                }
+                    return response.json(); //Así sale texto plano
+                })
+                .then((data) => {
+                id.textContent = `${data.id}`;
+                
+                })
+                .catch((error) => {
+                    console.error('Error en la petición:', error);
+                });
+        });
+
+    </script>
+</body>
+</html>

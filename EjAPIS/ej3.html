@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3</title>
+</head>
+<body>
+    <button id="notificar">PÚLSAME</button>
+
+    <script>
+        const boton = document.getElementById('notificar');
+
+        let permiso = Notification.permission;
+
+            if (permiso === 'default') {
+                Notification.requestPermission().then((resp) => {
+                if (resp === 'granted') {
+                    boton.addEventListener('click', () =>{
+                        new Notification('Bienvenido/a', {
+                            body: 'Bienvenido/a a esta web',
+                            icon: 'noti.webp',
+                        }); 
+                    });
+                };
+                });
+            }
+    </script>
+</body>
+</html>

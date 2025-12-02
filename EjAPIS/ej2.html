@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2</title>
+</head>
+<body>
+    <video src="example_MP4.mp4" controls>
+        No se puede cargar el video
+    </video>
+    <br>
+    <select id="velocidad">
+        <option value="ma" selected>--Selecciona una opcion--</option>
+        <option value="0.5">0.5x</option>
+        <option value="1">1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+    </select>
+    <script>
+        const video = document.querySelector('video');
+        const select = document.getElementById('velocidad');
+
+        select.addEventListener('change', () => {
+            video.playbackRate = select.value;
+        });
+    </script>
+</body>
+</html>
